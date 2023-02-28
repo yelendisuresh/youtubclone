@@ -63,7 +63,7 @@ const Head = () => {
       <div className="col-span-10 px-10">
         <div>
           <input
-            className=" px-5 w-1/2 border border-gray-400 p-2  rounded-l-full"
+            className=" px-5 w-1/2 border border-gray-400 p-2  rounded-l-full relative"
             type="text"
             value={searchQuery}
             onChange={(e) => setSeacrchQuery(e.target.value)}
@@ -75,7 +75,7 @@ const Head = () => {
           </button>
         </div>
         {showsuggestion && (
-          <div className="fixed bg-white py-2 px-5 w-[32rem] shadow-lg rounded-lg border border-gray-100">
+          <div className="absolute bg-white py-2 px-5 w-[32rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestion.map((suggestion) => {
                 return (
