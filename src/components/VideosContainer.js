@@ -21,7 +21,7 @@ const VideosContainer = () => {
     getVideos();
   }, []);
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap gap-3">
       {videos.map((video) => {
         return (
           <Link to={`/watch?v=${video.id}`}>
